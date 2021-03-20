@@ -3,7 +3,7 @@ import { Channel } from './twitch';
 import { Observable, of, Subject } from 'rxjs';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 
-const ID = 'vbxjue3t148z39syfw9ktbd2z9ezr0';
+const ID = 'nothing special';
 const SCOPE = 'user:edit:follows';
 
 
