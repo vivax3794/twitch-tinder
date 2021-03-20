@@ -1,0 +1,7 @@
+<div *ngIf="!twitchService.token">
+	<button mat-raised-button color="Accent" class="center" (click)="login()">Login with Twitch</button>
+</div>
+<div *ngIf="twitchService.token">
+	<app-card class="center" [channel]="channels[currentIndex]" (next)="nextChannel()"></app-card>
+	<p *ngIf="!channels[currentIndex]" class="center" id="done"><b>You are done, refresh to go again!</b></p>
+</div>
